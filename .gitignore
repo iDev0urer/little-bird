@@ -1,4 +1,6 @@
 /vendor
+package.json
+gulpfile.js
 /node_modules
 Homestead.yaml
 Homestead.json
