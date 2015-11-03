@@ -1,0 +1,19 @@
+@import "base";
+
+.jumbotron {
+  background: transparent url('/images/jumbo-bg.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: $gray-lightest;
+  position: relative;
+  @include media-breakpoint-down(sm) {
+    height: 300px;
+  }
+  @include media-breakpoint-up(md) {
+    height: 600px;
+  }
+
+  .centered {
+    @include centerer;
+  }
+}

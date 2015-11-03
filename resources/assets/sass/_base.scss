@@ -1,0 +1,8 @@
+$enable-flex: true;
+$brand-primary: #0183AB;
+@import "bootstrap/bootstrap";
+@import "mixins";
+
+.card img {
+  width: 100%;
+}
