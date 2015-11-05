@@ -136,6 +136,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Ignited\LaravelOmnipay\LaravelOmnipayServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -151,6 +152,7 @@ return [
         GrahamCampbell\Flysystem\FlysystemServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Jenssegers\Date\DateServiceProvider::class,
+        AllanTatter\React\ReactServiceProvider::class,
 
     ],
 
@@ -208,6 +210,8 @@ return [
         'Flysystem' => GrahamCampbell\Flysystem\Facades\Flysystem::class,
         'Image'     => Intervention\Image\Facades\Image::class,
         'Date'      => Jenssegers\Date\Date::class,
+        'Omnipay'   => Ignited\LaravelOmnipay\Facades\OmnipayFacade::class,
+        'React'     => AllanTatter\React\Facades\React::class,
 
     ],
 

@@ -1,13 +1,25 @@
 @import "base";
 
-.jumbotron {
+.nav-link {
+  overflow: hidden;
+}
+
+#search-block {
+  display: inline-block;
+  margin: 0 20px;
+  overflow: hidden;
+  width: 0;
+  display: none;
+}
+
+.jumbotron-header {
   background: transparent url('/images/jumbo-bg.jpg') center center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   color: $gray-lightest;
   position: relative;
   @include media-breakpoint-down(sm) {
-    height: 300px;
+    height: 400px;
   }
   @include media-breakpoint-up(md) {
     height: 600px;
@@ -15,5 +27,24 @@
 
   .centered {
     @include centerer;
+  }
+}
+
+footer#main-footer {
+  .social-links {
+
+    a {
+      padding: 12px;
+      font-size: 1.2rem;
+      color: $gray-lightest;
+      background-color: $brand-primary;
+      margin: 0 5px;
+      border-radius: 50%;
+      transition: all .5s ease-in-out;
+
+      &:hover {
+        background-color: darken($brand-primary, 10%);
+      }
+    }
   }
 }
